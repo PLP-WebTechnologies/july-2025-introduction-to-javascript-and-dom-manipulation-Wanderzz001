@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brew Haven Coffee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>☕ Brew Haven Coffee</h1>
+  <p>Fresh brews, cozy vibes, and your favorite neighborhood coffee shop.</p>
+
+  <!-- Part 1 -->
+  <section id="part1">
+    <h2>Personalized Greeting</h2>
+    <input type="text" id="customerName" placeholder="Enter your name">
+    <button id="greetBtn">Say Hello</button>
+    <p id="greeting"></p>
+  </section>
+
+  <!-- Part 2 -->
+  <section id="part2">
+    <h2>Order Calculator</h2>
+    <label for="drinkSelect">Choose a drink:</label>
+    <select id="drinkSelect">
+      <option value="Espresso">Espresso ($3.00)</option>
+      <option value="Latte">Latte ($4.50)</option>
+      <option value="Cappuccino">Cappuccino ($4.00)</option>
+      <option value="Mocha">Mocha ($5.00)</option>
+      <option value="Iced Coffee">Iced Coffee ($3.50)</option>
+    </select>
+    <input type="number" id="quantity" min="1" value="1">
+    <button id="calcBtn">Calculate Total</button>
+    <p id="total"></p>
+    <button onclick="toggleMessage()">Show Special</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 3 -->
+  <section id="part3">
+    <h2>Our Menu</h2>
+    <ul id="menuList"></ul>
+  </section>
+
+  <!-- Part 4 -->
+  <section id="part4">
+    <h2>Interactive Features</h2>
+    <button id="colorBtn">Toggle Theme</button>
+    <button id="newItemBtn">Add New Special</button>
+    <ul id="dynamicList"></ul>
+
+    <h3>Customer Feedback</h3>
+    <input type="text" id="feedbackInput" placeholder="Leave your feedback...">
+    <p id="feedbackOutput"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
